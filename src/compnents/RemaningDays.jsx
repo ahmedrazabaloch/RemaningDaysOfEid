@@ -48,11 +48,21 @@ const RemaningDays = () => {
               <th className="w-10 text-2xl p-3 bg-red-400">Second</th>
             </tr>
             <tr>
-              <td className="text-2xl p-3 bg-red-200 ">{remaningMonth}</td>
-              <td className="text-2xl p-3 bg-red-200 ">{remaningDays}</td>
-              <td className="text-2xl p-3 bg-red-200 ">{remaningHours}</td>
-              <td className="text-2xl p-3 bg-red-200 ">{remaningMinutes}</td>
-              <td className="text-2xl p-3 bg-red-200 ">{remaningSeconds}</td>
+              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                {remaningMonth}
+              </td>
+              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                {remaningDays}
+              </td>
+              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                {remaningHours}
+              </td>
+              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                {remaningMinutes}
+              </td>
+              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                {remaningSeconds}
+              </td>
             </tr>
           </table>
         </div>
