@@ -40,30 +40,35 @@ const RemaningDays = () => {
         <h1 className="mt-44 mb-8 text-5xl">Countdown to Eid-Ul-Adha</h1>
         <div className="flex justify-evenly">
           <table className="w-5/6">
-            <tr>
-              <th className="w-10 text-2xl p-3 bg-red-400">Month</th>
-              <th className="w-10 text-2xl p-3 bg-red-400">Days</th>
-              <th className="w-10 text-2xl p-3 bg-red-400">Hours</th>
-              <th className="w-10 text-2xl p-3 bg-red-400">Minutes</th>
-              <th className="w-10 text-2xl p-3 bg-red-400">Second</th>
-            </tr>
-            <tr>
-              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
-                {remaningMonth}
-              </td>
-              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
-                {remaningDays}
-              </td>
-              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
-                {remaningHours}
-              </td>
-              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
-                {remaningMinutes}
-              </td>
-              <td className="text-2xl p-3 bg-red-200 sm:w-20 md:w-10 lg:w-20 xl:w-10">
-                {remaningSeconds}
-              </td>
-            </tr>
+            <tbody>
+              <tr
+                className="w-10 text-2xl"
+                style={{ backgroundColor: "#f4ad27" }}
+              >
+                <th className="p-3">Month</th>
+                <th>Days</th>
+                <th>Hours</th>
+                <th>Minutes</th>
+                <th>Second</th>
+              </tr>
+              <tr style={{ backgroundColor: "#d2ba63" }}>
+                <td className="text-2xl p-3 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                  {remaningMonth > 0 ? remaningMonth : "0"}
+                </td>
+                <td className="text-2xl p-3 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                  {remaningDays}
+                </td>
+                <td className="text-2xl p-3 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                  {remaningHours}
+                </td>
+                <td className="text-2xl p-3 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                  {remaningMinutes}
+                </td>
+                <td className="text-2xl p-3 sm:w-20 md:w-10 lg:w-20 xl:w-10">
+                  {remaningSeconds}
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
